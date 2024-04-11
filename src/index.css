@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  /* border: 1px solid blue; */
+  background: rgb(235, 232, 232);
+  
+}
+
+.container{
+  /* width: 100%; */
+  /* border: 2px solid red; */
+  padding: 0 10%;
+  overflow-x: hidden;
+  overflow-y: hidden ;
+
+}
+
+@media (max-width: 550px){
+  .container{
+    padding: 0 7%;
+  }
+
+  
+}

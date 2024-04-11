@@ -1,0 +1,111 @@
+.session{
+  padding-top: 20%;
+}
+
+.session-container{
+  display: flex;
+  gap: 70px;
+}
+
+.left-session span{
+  display: inline-block;
+  color: rgb(38, 5, 128);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.left-session h2{
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.left-session p{
+  margin-bottom: 15px;
+}
+
+.left-session a{
+  color: white;
+  background: rgb(38, 5, 128);
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 30px;
+  
+  margin-top: 15px;
+}
+
+.left-session a span{
+  transform: translateY(7px);
+}
+
+.right-session{
+  width: 400px;
+  height: 400px;
+  box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.411);
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.right-session .session-avatar1{
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+
+}
+.right-session .session-avatar2{
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  
+}
+
+.right-session::before{
+  content: '';
+  position: absolute;
+  width: 150%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg) translateY(-25px);
+  height: 50%;
+  background: linear-gradient(to left, rgb(38, 5, 128), teal);
+  top: 0;
+}
+
+.right-session .tbb{
+  margin-left: 40px;
+}
+
+.right-session .tbb h3{
+  font-size: 16px;
+  color: rgb(38, 5, 128);
+  margin-top: 200px;
+  margin-bottom: 15px;
+}
+.right-session .tbb p{
+  font-weight: 600;
+}
+
+.right-session img{
+  width: 200px;
+  margin-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 950px){
+  .session-container{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px){
+  .session{
+    padding-top: 60%;
+  }
+}
+

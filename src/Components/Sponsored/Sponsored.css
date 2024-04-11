@@ -1,0 +1,39 @@
+.sponsored{
+  padding-top: 10%;
+}
+
+.sponsored-container{
+  /* border: 1px solid red; */
+}
+
+.sponsored-container .top{
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  justify-content: center;
+  /* align-items: center; */
+  gap: 25px;
+  margin-bottom: 20px;
+}
+.sponsored-container .top img{
+  width: 150px;
+  margin-right: 90px;
+  /* border: 1px solid blue; */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 646px){
+  .sponsored-container .top{
+    gap: 0;
+  }
+
+  .sponsored-container{
+    /* border: 1px solid red; */
+    display: flex;
+  }
+}
+@media (max-width: 512px){
+  .sponsored-container .top img{
+    width: 90px;
+  }
+}

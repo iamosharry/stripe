@@ -1,0 +1,138 @@
+.navbar{
+  /* background-color: tomato; */
+  position: relative;
+ 
+  
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  
+}
+
+.navbar-container ul{
+  display: flex;
+  list-style: none;
+  color: white;
+  gap: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+ul .active{
+  padding-bottom: 2px;
+  border-bottom: 2px solid white;
+}
+
+.navbar-container a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.205);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.menu-toggle{
+  display: none;
+}
+
+.side-menu{
+  display: none;
+}
+
+/* <<<=========>MEDIA QUERY FOR THE NAVBAR ==========>>>  */
+/* <<<=========>MEDIA QUERY FOR THE NAVBAR ==========>>>  */
+/* <<<=========>MEDIA QUERY FOR THE NAVBAR ==========>>>  */
+
+@media (max-width: 1150px){
+  .navbar-container a{
+    display: none;
+  }
+}
+
+@media (max-width: 850px){
+  .navbar-container ul{
+    display: none;
+  }
+
+  .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+    
+    
+    
+  }
+
+  .menu-toggle span{
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.5s linear;
+  }
+
+  .first.active{
+    transform:  rotate(50deg) translateY(5px) translateX(9px);
+    transition: all 0.5s linear;
+  }
+  
+  .second.active{
+    opacity: 0;
+    transition: all 0.5s linear;
+  }
+
+  .third.active{
+    transform: rotate(-48deg) translateY(-5px) translateX(10px);
+    transition: all 0.5s linear;
+  }
+
+  .side-menu{
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(49, 0, 128),rgb(105, 16, 207),rgb(82, 4, 82));
+    list-style: none;
+    width: 200px;
+    z-index: 50;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    transform: translateX(200px);
+    transition: all 0.5s linear;
+    opacity: 0;
+    
+  }
+  
+
+  .side-menu.active{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 0.5s linear;
+  }
+
+  .side-menu li{
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    
+    /* border: 1px solid white; */
+    padding: 10px;
+  }
+}

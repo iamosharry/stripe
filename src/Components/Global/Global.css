@@ -1,0 +1,143 @@
+.global{
+  padding-top: 20%;
+  position: relative;
+  
+}
+
+.global::before{
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 70%;
+  background: rgb(2, 6, 37);
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  
+  
+  
+}
+.global::after{
+  content: '';
+  position: absolute;
+  
+  width: 200%;
+  height: 50%;
+  background: rgb(2, 6, 37);
+  /* background-color: red; */
+  z-index: -1;
+  left: 50%;
+  
+  
+  transform: translateX(-50%) rotate(-10deg) translateY(-600px);
+  
+}
+.container-global{
+  padding-top: 10%;
+  
+}
+
+.container-global img{
+  width: 600px;
+  position: absolute;
+  right: 0;
+  
+  transform: translateY(-70%);
+  filter:opacity(0.3);
+}
+
+.container-global h2{
+  color: white;
+}
+
+.container-global span{
+  display: inline-block;
+  margin-bottom: 10px;
+  color: rgb(21, 233, 233);
+  position: relative;
+  
+}
+
+
+
+
+.container-global p{
+  color: white;
+  margin-top: 20px;
+}
+
+.api-div{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.api-div div{
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.api-div p{
+  font-size: 14px;
+}
+
+.global-link{
+  text-decoration: none;
+  color: rgb(21, 233, 233);
+}
+
+@media (max-width: 1234px){
+  .global::after{
+    content: '';
+    position: absolute;
+    transform: translateX(-50%) rotate(-10deg) translateY(-700px);
+    
+  }
+}
+@media (max-width: 620px){
+  .global::after{
+    content: '';
+    position: absolute;
+    transform: translateX(-40%) rotate(-5deg) translateY(-980px);
+    
+  }
+}
+@media (max-width: 498px){
+  .global::after{
+    content: '';
+    position: absolute;
+    transform: translateX(-40%) rotate(-5deg) translateY(-920px);
+    
+  }
+}
+@media (max-width: 326px){
+  .global::after{
+    content: '';
+    position: absolute;
+    transform: translateX(-40%) rotate(-5deg) translateY(-930px);
+    /* background-color: red; */
+    
+  }
+}
+
+@media (max-width: 760px){
+  .global::before{
+    content: '';
+    position: absolute;
+    transform: translateX(-50%) translateY(200px);
+    
+    
+    
+  }
+}
+@media (max-width: 618px){
+  .global::before{
+    content: '';
+    position: absolute;
+    transform: translateX(-50%) translateY(300px);
+    
+    
+    
+  }
+}

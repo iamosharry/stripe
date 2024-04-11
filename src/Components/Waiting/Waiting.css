@@ -1,0 +1,59 @@
+.waiting{
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.waiting-container{
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.waiting-container .left p{
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  line-height: 2rem;
+  
+}
+.waiting-container .left .left-btn{
+  background-color: rgb(38, 5, 128);
+  color: white;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+.waiting-container .left .left-btn img{
+  display: inline-block;
+  transform: translateY(7px);
+}
+
+
+.waiting-container .right{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.waiting-container .right .right-btn{
+  color: purple;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.waiting-container .right .right-btn img{
+  width: 20px;
+  transform: translateY(5px);
+}
+
+.waiting-container .right div img{
+  width: 50px;
+}
+.waiting-container .right div h2{
+  font-size: 16px;
+}
+
+.waiting-container .right div p{
+  font-size: 14px;
+}

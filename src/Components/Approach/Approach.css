@@ -1,0 +1,41 @@
+.approach{
+  padding-top: 35%;
+  /* border: 1px solid red; */
+}
+.approach-container{
+  margin-top: 5%;
+}
+.approach-container span{
+  color: rgb(65, 4, 100);
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.approaches{
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid green; */
+  align-items: end;
+  margin-top: 20px;
+  
+}
+.approaches p{
+  
+  /* border: 1px solid red; */
+  text-wrap: balance;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.approaches img{
+  width: 40px;
+}
+
+
+@media (max-width: 1000px){
+  .approaches{
+    flex-wrap: wrap;
+  }
+}

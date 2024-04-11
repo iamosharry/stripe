@@ -1,0 +1,55 @@
+
+.platform{
+  padding-top: 20%;
+}
+
+.platform-container h2{
+  line-height: 2.5rem;
+  
+  text-wrap: balance;
+}
+
+.platform-container span{
+  display: inline-block;
+  color: rgb(38, 5, 128);
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+
+.platform-container .par{
+  
+  margin-top: 20px;
+  line-height: 2rem;
+  font-weight: 500;
+  /* border: 1px solid red; */
+  
+}
+
+.platform-container .par p{
+  margin-top: 20px;
+  text-wrap:balance ;
+}
+
+.platform-container .par a{
+  color: rgb(38, 5, 128);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+
+
+.platform-container .start{
+  color: white;
+  background-color: rgb(38, 5, 128);
+  text-decoration: none;
+  padding: 6px 15px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 20px;
+  
+  
+}
+
