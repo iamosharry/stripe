@@ -1,18 +1,19 @@
 {
+  "homepage": "https://iamosharry.github.io/react_stripe_project",
   "name": "swipe-react",
   "private": true,
-  "homepage": "http://iamosharry.github.io/react_stripe_project",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "build": "^0.1.4",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0"
