@@ -12,7 +12,7 @@ const Hero = () => {
             <a className='cs' href="#">Contact sales</a>
           </div>
           <div className="right">
-            <img src="src/assets/hero-phone.png" alt="" />
+            <img src="/assets/hero-phone.png" alt="" />
           </div>
         </div>
       </div>

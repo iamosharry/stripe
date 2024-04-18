@@ -7,7 +7,7 @@ const Global = () => {
         <span>Global scale</span>
         <h2>A structure for global <br /> businesses</h2>
         <p>Swipe makes moving money simple, borderless, and programmable - <br />just like the rest of the internet. We have teams all over the world and <br />we process billions and billions of dollars yearly for <a className='global-link' href="#">startups, Fortune <br />500s, and everything in between</a></p>
-        <img src="src/assets/global-graphic.png" alt="" />
+        <img src="/assets/global-graphic.png" alt="" />
         <div className="api-div">
           <div>
             <span>250M+</span>
