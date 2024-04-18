@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
-import logo from './assets/logo-white.svg'
+import logo from '../../assets/logo-white.svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState('Contact')
