@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
+import logo from './assets/logo-white.svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState('Contact')
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="navbar-container">
-        <img src="src/assets/logo-white.svg" alt="" />
+        <img src={logo} alt="" />
         <ul>
           <li onMouseMove={()=>{setMenu('Products')}} className={menu === 'Products' ? 'active' : ''} >Products</li>
           <li onMouseMove={()=>{setMenu('Developers')}} className={menu == 'Developers' ? 'active' : ''}>Developers</li>
