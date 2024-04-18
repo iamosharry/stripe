@@ -7,12 +7,26 @@
   position: absolute;
   width: 250%;
   height: 450px;
-  background: linear-gradient(to left,rgb(182, 47, 182),orange,rgb(207, 16, 166),rgb(82, 4, 82));
+  background: linear-gradient(45deg,rgb(182, 47, 182),orange,rgb(207, 16, 166),rgb(82, 4, 82));
   /* transform: translateX(-300px) translateY(-100px); */
+  background-size: 300% 300%;
   top: -40%;
   left: 50%;
   transform: translateX(-50%) rotate(-10deg);
   z-index: -1;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  10%{
+    background-position: 0 50%;
+  }
 }
 
 .hero-container{
@@ -147,7 +161,7 @@
 
 @media (max-width: 550px){
   .hero-container .left h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* border: 1px solid red; */
     margin-top: 30px;
     display: inline-block;
@@ -178,4 +192,14 @@
   }
 
   
+}
+
+@media (max-width: 359px){
+  .hero-container .left h1{
+    font-size: 2.1rem;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    display: inline-block;
+    
+  }
 }
