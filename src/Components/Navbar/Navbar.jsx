@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="navbar-container">
-        <img src="/logo-white.svg" alt="" />
+        <img src="/assets/logo-white.svg" alt="" />
         <ul>
           <li onMouseMove={()=>{setMenu('Products')}} className={menu === 'Products' ? 'active' : ''} >Products</li>
           <li onMouseMove={()=>{setMenu('Developers')}} className={menu == 'Developers' ? 'active' : ''}>Developers</li>
